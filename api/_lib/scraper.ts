@@ -1,6 +1,6 @@
 import * as cheerio from 'cheerio';
-import { StoreId, StoreOffer } from './types';
-import { STORES } from './catalog';
+import type { StoreId, StoreOffer } from './types.js';
+import { STORES } from './catalog.js';
 
 const MIN_VALID_PRICE = 800;
 const MAX_VALID_PRICE = 2800;

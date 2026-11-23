@@ -1,7 +1,7 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { CATALOG } from './_lib/catalog';
-import { scrapeStore } from './_lib/scraper';
-import { PricesResponse, StoreId, StoreOffer, VariantResult } from './_lib/types';
+import { CATALOG } from './_lib/catalog.js';
+import { scrapeStore } from './_lib/scraper.js';
+import type { PricesResponse, StoreId, StoreOffer, VariantResult } from './_lib/types.js';
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   const forceRefresh = req.query.refresh === '1';

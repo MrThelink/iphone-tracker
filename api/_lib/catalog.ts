@@ -1,4 +1,4 @@
-import { ModelId, StorageOption, StoreId } from './types';
+import type { ModelId, StorageOption, StoreId } from './types.js';
 
 export interface StoreConfig {
   id: StoreId;
